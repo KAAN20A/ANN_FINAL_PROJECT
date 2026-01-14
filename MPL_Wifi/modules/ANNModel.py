@@ -279,26 +279,8 @@ class ANNModel:
    
 
 
-#if __name__ == "__ANNModel__":
-   # read_rssi_from_powershell("../shell_script/wifi_rssi_log.ps1")
- #  new_annModel=ANNModel()
-  # raw_dataset, backscatter_dataset=new_annModel.run_ann_experiment()
-   #print(raw_dataset)
-   #print(backscatter_dataset)
+if __name__ == "__ANNModel__":
+    
+  
    
    
-new_annModel=ANNModel()
-df,backscatter_df=new_annModel.run_ann_experiment()
-#new_annModel.plot_signal(df, 'rssi', title='RSSI over Time')
-#new_annModel.plot_signal(df, 'backscatter', title='Backscattering Proxy over Time')
-new_annModel.build(backscatter_df)
-#new_annModel.load()
-#x = rR.read_rssi_from_powershell("../shell_scripts/wifi_rssi_log.ps1",2)
-#x=rR.parse_rssi_string(x)
-#x = pd.Series(x, name='rssi')
-#x = pd.to_numeric(x, errors='coerce')
-#room_class, event_class = new_annModel.predict(x)
-#print("Tahmin edilen oda:", room_class)
-#print("Tahmin edilen event:", event_class)
-#incoming_signal=rR.read_rssi_from_powershell("../shell_scripts/wifi_rssi_log.ps1",1)
-#print(incoming_signal)
